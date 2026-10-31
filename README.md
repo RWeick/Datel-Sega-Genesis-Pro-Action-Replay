@@ -1,5 +1,5 @@
 # Datel-Sega-Genesis-Pro-Action-Replay
-The Kicad files and rom dump of the Sega Genesis Pro Action Replay
+Everything necessary to produce the Sega Genesis Pro Action Replay
 
 PCB Thickness: 1.6 mm
 
