@@ -1,0 +1,66 @@
+asic_pin,schematic_signal,schematic_direction,recovered_direction,hdl_connection,active_level,notes
+1,D9,bidirectional,bidirectional,bus_wdata[9] / bus_rdata[9] when bus_drive,,
+2,D10,bidirectional,bidirectional,bus_wdata[10] / bus_rdata[10] when bus_drive,,
+3,GND,power_in,power,,0 V,
+4,D11,bidirectional,bidirectional,bus_wdata[11] / bus_rdata[11] when bus_drive,,
+5,D12,bidirectional,bidirectional,bus_wdata[12] / bus_rdata[12] when bus_drive,,
+6,D13,bidirectional,bidirectional,bus_wdata[13] / bus_rdata[13] when bus_drive,,
+7,GND,power_in,power,,0 V,
+8,D14,bidirectional,bidirectional,bus_wdata[14] / bus_rdata[14] when bus_drive,,
+9,D15,bidirectional,bidirectional,bus_wdata[15] / bus_rdata[15] when bus_drive,,
+10,/VRES,input,input,reset_n derived with pin 18,low,Do not connect directly without preserving power-good reset behavior
+11,SRAM.EN,output,output,sram_select_n,low,Schematic name omits the recovered active-low polarity
+12,I/O,no_connect,unused,,,Unconnected on the original Sega board
+13,/CAS0.Game,output,output,game_read_n,low,
+14,VCC,power_in,power,,+5 V,
+15,EEPROM.OE,output,output,eeprom_oe_n,low,Schematic name omits the recovered active-low polarity
+16,Switch.1,input,input,switch_active = !pin16,low,Low is the replacement-enabled switch position
+17,/CAS0.Sys,input,input,bus_read = !pin17,low,Console cartridge-read strobe
+18,Pwr.Good,input,input,reset_n derived with pin 10,high,RC-delayed power-good input
+19,Switch.3,input,input,switch_program = !pin19,low,Low at reset enters menu/programming state
+20,A1,input,input,bus_addr[1],,
+21,A2,input,input,bus_addr[2],,
+22,A3,input,input,bus_addr[3],,
+23,A4,input,input,bus_addr[4],,
+24,A5,input,input,bus_addr[5],,
+25,A6,input,input,bus_addr[6],,
+26,GND,power_in,power,,0 V,
+27,A7,input,input,bus_addr[7],,
+28,A8,input,input,bus_addr[8],,
+29,A9,input,input,bus_addr[9],,
+30,A10,input,input,bus_addr[10],,
+31,A11,input,input,bus_addr[11],,
+32,A12,input,input,bus_addr[12],,
+33,A13,input,input,bus_addr[13],,
+34,A14,input,input,bus_addr[14],,
+35,A15,input,input,bus_addr[15],,
+36,A16,input,input,bus_addr[16],,
+37,A17,input,input,bus_addr[17],,
+38,A18,input,input,bus_addr[18],,
+39,A19,input,input,bus_addr[19],,
+40,A20,input,input,bus_addr[20],,
+41,GND,power_in,power,,0 V,
+42,I/O,no_connect,unused,,,Unconnected on the original Sega board
+43,A21,input,input,bus_addr[21],,
+44,A22,input,input,bus_addr[22],,
+45,A23,input,input,bus_addr[23],,Set bus_addr[0] to zero in a Sega wrapper
+46,/UWR,input,input,bus_write qualified event,low,Accept writes only while /AS.Sys is already active
+47,I/O,no_connect,unused,,,Unconnected on the original Sega board
+48,I/O,no_connect,unused,,,Unconnected on the original Sega board
+49,I/O,no_connect,unused,,,Unconnected on the original Sega board
+50,/AS.Sys,input,input,bus_write qualifier,low,Duplicate physical /AS.Sys input
+51,/AS.Sys,input,input,bus_write qualifier,low,Duplicate physical /AS.Sys input
+52,GND,power_in,power,,0 V,
+53,D0,bidirectional,bidirectional,bus_wdata[0] / bus_rdata[0] when bus_drive,,
+54,D1,bidirectional,bidirectional,bus_wdata[1] / bus_rdata[1] when bus_drive,,
+55,D2,bidirectional,bidirectional,bus_wdata[2] / bus_rdata[2] when bus_drive,,
+56,D3,bidirectional,bidirectional,bus_wdata[3] / bus_rdata[3] when bus_drive,,
+57,VCC,power_in,power,,+5 V,
+58,GND,power_in,power,,0 V,
+59,D4,bidirectional,bidirectional,bus_wdata[4] / bus_rdata[4] when bus_drive,,
+60,D5,bidirectional,bidirectional,bus_wdata[5] / bus_rdata[5] when bus_drive,,
+61,D6,bidirectional,bidirectional,bus_wdata[6] / bus_rdata[6] when bus_drive,,
+62,GND,power_in,power,,0 V,
+63,D7,bidirectional,bidirectional,bus_wdata[7] / bus_rdata[7] when bus_drive,,
+64,D8,bidirectional,bidirectional,bus_wdata[8] / bus_rdata[8] when bus_drive,,
+
